@@ -16,59 +16,60 @@ ruby-backend-challenge. It's a Fudo technical challenge
 2. Navigate to the project directory
 
 3. Build the Docker image
-
-docker build -t container-name .
-
+   ```bash
+   docker build -t container-name .
 (Replace container-name with the desired name for your container)
 
 4. Run the container
-
-docker run -p 9292:9292 container-name
-
+   ```bash
+   docker run -p 9292:9292 container-name .
 (This will map port 9292 from the container to port 9292 on your local machine, allowing you to access your application from a web browser at http://localhost:9292)
 
 # Usage
 
 1. Create a User
 
-Use the following API endpoint to create a user:
-
-Endpoint: POST /register
-Request Body:
-
-{
-  "username": "yourusername",
-  "password": "yourpassword"
-}
+   Use the following API endpoint to create a user:
+      ```bash
+      Endpoint: POST /register
+      
+      Request Body:
+      
+      {
+        "username": "yourusername",
+        "password": "yourpassword"
+      }
 
 2. Log In
 
-Log in with the created user credentials:
-
-Endpoint: POST /authentication
-Request Body:
-
-{
-  "username": "yourusername",
-  "password": "yourpassword"
-}
+   Log in with the created user credentials:
+   ```bash
+   Endpoint: POST /authentication
+   
+   Request Body:
+   {
+     "username": "yourusername",
+     "password": "yourpassword"
+   }
 
 3. Explore Available Requests
 
-Use the following endpoints to interact with the application:
-
-- To create a product:
-
-Endpoint: POST /products/create
-Request Body:
-
-{
-  "name": "Product Name"
-}
-
-- To retrieve all products:
-
-Endpoint: GET /products
+   Use the following endpoints to interact with the application:
+   
+   - To create a product:
+      ```bash
+      Endpoint: POST /products/create
+      
+      Request Body:
+      
+      {
+        "name": "Product Name"
+      }
+   
+   - To retrieve all products:
+      ```bash
+      Endpoint: GET /products
 
 # Postman Collection
+
 https://www.postman.com/valentinopfarherr/workspace/ruby-challenge

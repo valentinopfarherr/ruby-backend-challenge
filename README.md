@@ -69,3 +69,6 @@ Request Body:
 - To retrieve all products:
 
 Endpoint: GET /products
+
+# Postman Collection
+https://www.postman.com/valentinopfarherr/workspace/ruby-challenge

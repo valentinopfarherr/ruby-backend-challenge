@@ -1,0 +1,28 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cuba (4.0.1)
+      rack (>= 3.0.0)
+      rack-session (>= 2.0.0)
+    json (2.6.3)
+    nio4r (2.6.1)
+    puma (6.4.0)
+      nio4r (~> 2.0)
+    rack (3.0.8)
+    rack-contrib (2.4.0)
+      rack (< 4)
+    rack-session (2.0.0)
+      rack (>= 3.0.0)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  cuba
+  json
+  puma
+  rack
+  rack-contrib
+
+BUNDLED WITH
+   2.4.22

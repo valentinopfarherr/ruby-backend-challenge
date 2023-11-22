@@ -1,0 +1,78 @@
+openapi: 3.0.0
+info:
+  title: Ruby Backend Challenge API
+  version: 1.0.0
+  description: API's Description
+
+paths:
+  /authentication:
+    post:
+      summary: Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: User authenticated
+        '401':
+          description: Invalid credentials
+
+  /register:
+    post:
+      summary: Sign in as a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '201':
+          description: User created successfully
+        '400':
+          description: User already exists
+  /products:
+    get:
+      summary: Get the list of products
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      description: ID of the product
+                    name:
+                      type: string
+                      description: Name of the product
+    post:
+      summary: Create a new product
+      responses:
+        '202':
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: Confirmation message for product creation

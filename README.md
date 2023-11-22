@@ -1,6 +1,9 @@
-# Project Name
+# ruby-backend-challenge
 
-ruby-backend-challenge. It's a Fudo technical challenge
+This project implements a simple API using Ruby and Rack, exposing endpoints for authentication, product creation, and product queries. It adheres to OpenAPI specifications and includes features like asynchronous product creation and gzip compression for responses upon client request.
+
+## Theoretical Information
+Theoretical information regarding Fudo, TCP, and HTTP can be found in the `theoretical` folder. Refer to the corresponding markdown files for more details.
 
 ## Prerequisites
 

@@ -15,6 +15,8 @@ Cuba.use Rack::JSONBodyParser
 Cuba.define do
   extend Utilities
 
+  Dir.mkdir('data') unless File.directory?('data')
+
   @users = load_users
   @products = load_products
 

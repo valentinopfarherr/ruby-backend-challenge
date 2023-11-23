@@ -25,7 +25,7 @@ Theoretical information regarding Fudo, TCP, and HTTP can be found in the `theor
 
 4. Run the container
    ```bash
-   docker run -p 9292:9292 container-name .
+   docker run -p 9292:9292 container-name
 (This will map port 9292 from the container to port 9292 on your local machine, allowing you to access your application from a web browser at http://localhost:9292)
 
 # Usage
